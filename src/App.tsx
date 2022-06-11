@@ -3,10 +3,12 @@ import { ChakraProvider, Container, Flex } from '@chakra-ui/react';
 
 import Details from './sections/Details';
 import Cart from './sections/Cart';
+import theme from './sections/theme';
+import "./sections/theme/styles.css";
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Container maxWidth="container.xl" padding={0}>
         <Flex
           h={{ base: "auto", md:"100vh" }}
